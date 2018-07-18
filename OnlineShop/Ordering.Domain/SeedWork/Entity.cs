@@ -35,7 +35,7 @@ namespace Ordering.Domain.SeedWork
         //    if (_domainEvents is null) return;
         //    _domainEvents.Remove(eventItem);
         //}
-        // Marat
+
         public bool IsTransient()
         {
             return this.Id == default(Int32);
