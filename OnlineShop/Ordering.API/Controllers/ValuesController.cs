@@ -40,5 +40,11 @@ namespace Ordering.API.Controllers
         public void Delete(int id)
         {
         }
+
+        [HttpGet]
+        public IEnumerable<string> GetStrings()
+        {
+            return new string[] { "value1", "value2" };
+        }
     }
 }
