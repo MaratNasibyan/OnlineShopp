@@ -12,6 +12,7 @@ namespace Ordering.Infrastructure.Repositories
     {
         private readonly OrderingContext _context;
 
+		// fetch
         public IUnitOfWork UnitOfWork
         {
             get
@@ -31,7 +32,7 @@ namespace Ordering.Infrastructure.Repositories
             return _context.Orders.Add(order).Entity;
 
         }
-
+        // From Home
         public async Task<Order> GetAsync(int orderId)
         {
             var order = await _context.Orders.FindAsync(orderId);
