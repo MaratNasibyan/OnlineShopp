@@ -13,7 +13,6 @@ namespace Ordering.Infrastructure.Repositories
     {
         private readonly OrderingContext _context;
 // pull Test
-//dag sdg
         public IUnitOfWork UnitOfWork
         {
             get
