@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using Ordering.Domain.SeedWork;
@@ -20,7 +20,7 @@ namespace Ordering.Infrastructure.Repositories
                 return _context;
             }
         }
-
+// part1
         public BuyerRepository(OrderingContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
@@ -41,7 +41,7 @@ namespace Ordering.Infrastructure.Repositories
             }
 
         }
-
+// part2
         public Buyer Update(Buyer buyer)
         {
             return _context.Buyers
